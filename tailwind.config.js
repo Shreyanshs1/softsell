@@ -11,6 +11,7 @@ module.exports = {
         tertiary:"rgba(var(--tertiary))",
         text1:"rgba(var(--text))",
         shadow:"rgba(var(--shadow))",
+        logo:"rgba(var(--logo))",
       }
     },
   },

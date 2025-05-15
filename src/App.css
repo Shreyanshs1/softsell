@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    @apply transition-colors duration-500;
 }
 
 body{
     font-family: "Quicksand", serif;
+}
+
+.logo{
+  font-family: "Newsreader", serif;
 }

@@ -1,9 +1,10 @@
 import './App.css';
+import Main from './components/Main';
 
 function App() {
   return (
-    <div className='dark'>
-      <h1 className='text-text1 bg-tertiary'>Hello world</h1>
+    <div className=''>
+      <Main/>
     </div>
   );
 }

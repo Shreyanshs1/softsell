@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Gotu&family=Playwrite+VN:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Passions+Conflict&family=Sacramento&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Jacquard+24&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Quintessential&display=swap');
 
 .light{
     --primary:205, 111, 255;
     --secondary:227, 177, 244;
     --tertiary:238, 223, 243;
     --text:49, 0, 129;
+    --logo: 0,0,0;
     --shadow:54, 0, 107;
 }
 .dark{
@@ -16,5 +17,6 @@
     --secondary: 53, 36, 59;
     --tertiary: 0, 0, 0;
     --text:255, 255, 255;
+    --logo:238, 223, 243;
     --shadow:54, 0, 107;
 }
