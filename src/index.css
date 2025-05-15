@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Playwrite+VN:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Passions+Conflict&family=Sacramento&family=Tangerine:wght@400;700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.light{
+    --primary:205, 111, 255;
+    --secondary:227, 177, 244;
+    --tertiary:238, 223, 243;
+    --text:49, 0, 129;
+    --shadow:54, 0, 107;
+}
+.dark{
+    --primary: 82, 44, 103;
+    --secondary: 53, 36, 59;
+    --tertiary: 0, 0, 0;
+    --text:255, 255, 255;
+    --shadow:54, 0, 107;
 }
