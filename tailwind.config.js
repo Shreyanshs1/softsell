@@ -12,6 +12,7 @@ module.exports = {
         text1:"rgba(var(--text))",
         shadow:"rgba(var(--shadow))",
         logo:"rgba(var(--logo))",
+        text2:"rgba(var(--text-secondary))",
       }
     },
   },

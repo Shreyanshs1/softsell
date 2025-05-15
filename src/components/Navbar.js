@@ -8,7 +8,7 @@ function Navbar() {
         <span className="text-4xl font-bold text-logo logo">SoftSell</span>
       </div>
 
-      <div className="flex-grow flex justify-center">
+      <div className="flex-grow hidden md:flex justify-center">
         <ul className="flex space-x-4">
           <li>
             <a href="#how-it-works" className="hover:underline">How It Works</a>
