@@ -6,7 +6,7 @@
 
 ## 📸 Live Demo
 
-🔗 [Live Site Hosted on Vercel](#)
+🔗 [Live Site Hosted on Vercel](https://softsell-phi-three.vercel.app/)
 
 ---
 
@@ -78,7 +78,6 @@ SoftSell is a modern, responsive, single-page web app designed for a fictional s
 ```
 src/
 ├── components/            # Reusable components (e.g., DarkModeToggle)
-├── pages/                 # Page-level components
 ├── stylesheets/           # Custom styles (Tailwind and CSS variables)
 ├── App.js                 # Root component
 ├── App.css                # Stylesheet for App.js
@@ -123,7 +122,7 @@ npm start
 ## 📦 Deployment
 
 Hosted on **Vercel**  
-🔗 [https://your-vercel-link.vercel.app](#)
+🔗 [https://softsell-phi-three.vercel.app/](https://softsell-phi-three.vercel.app/)
 
 ---
 
