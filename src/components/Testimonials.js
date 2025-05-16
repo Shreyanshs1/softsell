@@ -8,8 +8,8 @@ const testimonials = [
     name: "Rishabh Sharma",
     role: "IT Manager",
     company: "Tech Solutions Co.",
-    image: "https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-1029-1024x683.jpg", 
-    stars: 5, 
+    image: "https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-1029-1024x683.jpg",
+    stars: 5,
   },
   {
     id: 2,
@@ -17,52 +17,52 @@ const testimonials = [
     name: "Jane Austin",
     role: "Procurement Officer",
     company: "Innovate Corp.",
-    image: "https://images.squarespace-cdn.com/content/v1/62f438a204e1900c8e0538cd/62aba60b-08da-4d20-a999-46209c1b33f0/BV1A4931.jpg", 
-    stars: 5, 
+    image: "https://images.squarespace-cdn.com/content/v1/62f438a204e1900c8e0538cd/62aba60b-08da-4d20-a999-46209c1b33f0/BV1A4931.jpg",
+    stars: 5,
   },
-   
+
 ];
- 
+
 const Testimonials = () => {
-  return ( 
+  return (
     <section id="testimonials" className="py-16 px-4 sm:px-6 lg:px-8 bg-tertiary text-text1">
-      <div className="max-w-screen-xl mx-auto"> 
-        <motion.h2 
-        className="text-3xl sm:text-4xl font-bold text-center mb-12"
-        initial={{ opacity: 0, y: 50 }}
+      <div className="max-w-screen-xl mx-auto">
+        <motion.h2
+          className="text-3xl sm:text-4xl font-bold text-center mb-12"
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           Customer Testimonials
-        </motion.h2> 
+        </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
- 
-          {testimonials.map((testimonial) => ( 
+
+          {testimonials.map((testimonial) => (
             <motion.div
-              key={testimonial.id} 
+              key={testimonial.id}
               className="flex flex-col p-6 rounded-lg bg-secondary bg-opacity-10 shadow-md"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: testimonial.id * 0.2 }}
               viewport={{ once: true }}
-            > 
+            >
               <p className="italic mb-6 text-lg opacity-95">"{testimonial.review}"</p>
- 
-              <div className="flex items-center mt-auto"> 
+
+              <div className="flex items-center mt-auto">
                 <img
                   src={testimonial.image}
                   alt={`${testimonial.name}'s photo`}
-                  className="w-14 h-14 rounded-full object-cover mr-4" 
-                  onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/60x60/gray/white?text=N/A" }}
+                  className="w-14 h-14 rounded-full object-cover mr-4"
+                  onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/60x60/gray/white?text=N/A" }}
                 />
- 
-                <div className="flex-grow">  
+
+                <div className="flex-grow">
                   <p className="font-semibold">{testimonial.name}</p>
                   <p className="text-sm opacity-80">{testimonial.role}, {testimonial.company}</p>
                 </div>
- 
-                <div className="flex items-center ml-4">  
+
+                <div className="flex items-center ml-4">
                   {[...Array(5)].map((_, i) => (
                     <svg
                       key={i}
