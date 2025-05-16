@@ -44,6 +44,7 @@ function HowItWorks() {
         variants={containerVariants}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true }}
         >
         {/* first section */}
           <motion.div 

@@ -30,15 +30,15 @@ function Hero() {
           valuation and turn idle assets into cash.
         </motion.p>
 
-        <a
+        <motion.a
           href="#contact"
-          className="inline-block bg-tertiary text-text1 p-3 px-8 rounded-lg font-semibold hover:bg-secondary-dark transition-colors duration-200"
+          className="inline-block bg-tertiary text-text1 p-3 px-8 rounded-lg font-semibold hover:bg-secondary transition-colors duration-200"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
           Get a Quote
-        </a>
+        </motion.a>
       </motion.div>
     </section>
   )

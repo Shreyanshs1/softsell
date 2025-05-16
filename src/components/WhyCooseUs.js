@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 function WhyCooseUs() {
   const reasons = [
@@ -25,7 +26,13 @@ function WhyCooseUs() {
   ];
 
   return (
-    <section id="why-choose-us" className="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-text1">
+    <motion.section
+     id="why-choose-us" className="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-text1"
+     initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+     >
       <div className="max-w-screen-xl mx-auto">
         {/* Section Heading */}
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
@@ -33,12 +40,30 @@ function WhyCooseUs() {
         </h2>
 
         {/* Reasons/Tiles Container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
 
           {reasons.map((reason, index) => (
-            <div
+            <motion.div
               key={index} 
               className="flex flex-col items-center text-center p-6 rounded-lg bg-secondary text-text1 shadow-lg"
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.4, ease: 'easeOut' }}
+              whileHover={{ scale: 1.05 }}
             >
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4">
                 {reason.icon}
@@ -49,12 +74,12 @@ function WhyCooseUs() {
 
               {/* Reason Description */}
               <p className="text-text1">{reason.description}</p>
-            </div>
+            </motion.div>
           ))}
 
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
