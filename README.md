@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# 🧾 SoftSell
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**One-page responsive site for reselling software licenses**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Live Demo
 
-### `npm start`
+🔗 [Live Site Hosted on Vercel](#)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Project Overview
 
-### `npm test`
+SoftSell is a modern, responsive, single-page web app designed for a fictional software license resale startup. It includes all essential sections such as navbar, hero, how-it-works,why choose us, testimonials, contact form, and is styled using Tailwind CSS with full support for dark mode and animations via Framer Motion.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧱 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ⚛️ React (CRA)
+- 🎨 Tailwind CSS (Utility-first)
+- 🌘 Dark Mode with custom theme
+- ✨ Framer Motion for animations
+- 🧩 FontAwesome for icons
+- 🚀 Hosted on [Vercel](https://vercel.com)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎨 Design System
 
-### `npm run eject`
+### 🎯 Color Palette
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 🌞 Light Mode
+| Variable           | RGB               |
+|--------------------|-------------------|
+| --primary          | 205, 111, 255     |
+| --secondary        | 227, 177, 244     |
+| --tertiary         | 238, 223, 243     |
+| --text             | 49, 0, 129        |
+| --text-secondary   | 227, 177, 244     |
+| --logo             | 0, 0, 0           |
+| --shadow           | 54, 0, 107        |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 🌚 Dark Mode
+| Variable           | RGB               |
+|--------------------|-------------------|
+| --primary          | 82, 44, 103       |
+| --secondary        | 53, 36, 59        |
+| --tertiary         | 0, 0, 0           |
+| --text             | 255, 255, 255     |
+| --text-secondary   | 172, 137, 227     |
+| --logo             | 238, 223, 243     |
+| --shadow           | 54, 0, 107        |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🖋 Font Family
 
-## Learn More
+- "Quicksand", serif for body text
+- "Newsreader", serif for logo branding
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ✨ Features Implemented
 
-### Code Splitting
+- ✅ Dark Mode Toggle with theme-aware styles
+- 🎨 Custom Color Palette for both themes
+- 📱 Fully Responsive Layout
+- 🛠 Tailwind Utility-Based Styling
+- 💫 Animations using Framer Motion
+- 🧠 FontAwesome Icons and Logo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📁 Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+src/
+├── components/            # Reusable components (e.g., DarkModeToggle)
+├── pages/                 # Page-level components
+├── stylesheets/           # Custom styles (Tailwind and CSS variables)
+├── App.js                 # Root component
+├── App.css                # Stylesheet for App.js
+├── main.js                # Entry point
+├── index.css              # Primary css file
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛠 Setup Instructions
 
-### Advanced Configuration
+### 1. Clone the repo
+```bash
+git clone https://github.com/Shreyanshs1/softsell
+cd softsell
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 2. Install dependencies
+```bash
+npm install
+```
 
-### Deployment
+### 3. Start development server
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> This project uses **Create React App** (CRA)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ⏱ Time Breakdown
+
+| Task                          | Time Spent |
+|-------------------------------|------------|
+| Planning & Formulating        | 3 hours    |
+| Building & Styling (UI)       | 5 hours    |
+| Animations with Framer Motion | 2 hours    |
+
+---
+
+## 📦 Deployment
+
+Hosted on **Vercel**  
+🔗 [https://your-vercel-link.vercel.app](#)
+
+---
+
+## 🙌 Credits
+
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [FontAwesome](https://fontawesome.com/)
+- Fonts from [Google Fonts](https://fonts.google.com/):
+  - [Quicksand](https://fonts.google.com/specimen/Quicksand)
+  - [Newsreader](https://fonts.google.com/specimen/Newsreader)
+
+---
+
+## 📬 Contact
+
+Want to collaborate or connect?
+
+📧 Email: shreyanshsri1807@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/shreyansh-srivastava-09b604226/)
+🔗 [Portfolio](https://portfolio-shreyanshs1s-projects.vercel.app/)
+🔗 [Github](https://github.com/Shreyanshs1/)
+
+---
