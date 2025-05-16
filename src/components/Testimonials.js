@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
@@ -26,15 +27,25 @@ const Testimonials = () => {
   return ( 
     <section id="testimonials" className="py-16 px-4 sm:px-6 lg:px-8 bg-tertiary text-text1">
       <div className="max-w-screen-xl mx-auto"> 
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+        <motion.h2 
+        className="text-3xl sm:text-4xl font-bold text-center mb-12"
+        initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           Customer Testimonials
-        </h2> 
+        </motion.h2> 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
  
           {testimonials.map((testimonial) => ( 
-            <div
+            <motion.div
               key={testimonial.id} 
               className="flex flex-col p-6 rounded-lg bg-secondary bg-opacity-10 shadow-md"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: testimonial.id * 0.2 }}
+              viewport={{ once: true }}
             > 
               <p className="italic mb-6 text-lg opacity-95">"{testimonial.review}"</p>
  
@@ -64,7 +75,7 @@ const Testimonials = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
 
         </div>
